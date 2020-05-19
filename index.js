@@ -5,20 +5,20 @@ const app = express();
 const port = 7777;
 app.use(cors());
 
-app.get('/items', (req, res, next)=> {
+app.get('/shoppingcart', (req, res)=> {
   if (req.query.item_id) {
-    res.redirect(`http://localhost:8080/items/?item_id=${req.query.item_id}`);
+    res.redirect(`http://13.57.207.50:3333/shoppingcart/?item_id=${req.query.item_id}`);
   } else {
-  res.redirect('http://localhost:8080/items');
+  res.redirect('http://13.57.207.50:3333/shoppingcart');
   }
 })
 
-app.get('/itemphoto', (req, res)=> {
-  res.redirect('http://localhost:1234/itemphoto');
+app.get('/items', (req, res)=> {
+  res.redirect('http://54.219.237.16:1235/items');
 })
 
 app.get('/api/looks', (req, res)=> {
-  res.redirect('http://localhost:3000/api/looks');
+  res.redirect('http://3.101.47.20:3000/api/looks');
 })
 
 app.use(express.static(__dirname + '/'));

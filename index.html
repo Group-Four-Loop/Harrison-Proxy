@@ -1,24 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="/style.css">
-    <title>FEC Demo</title>
-  </head>
-  <body>
 
-    <!-- <div id="modal-root"></div> -->
+<head>
+  <meta charset="UTF-8">
+  <!-- <link rel="stylesheet" href="/style.css"> -->
+  <title>A-Proxy-mately Nordstrom!</title>
+</head>
 
-    <div style='display:flex; justify-content: space-evenly; margin:10%;'>
-      <div id="Photos">Photos</div>
-      <div id="Item" >Items</div>
+<body>
+  <!-- <div id="modal-root"> -->
+    <div id="modal-root"></div>
+    <img style="object-fit:contain; width:100%; margin-bottom:2%;" src="https://fec-fourloop-looks.s3-us-west-1.amazonaws.com/Screen+Shot+2020-05-18+at+6.19.47+PM.png"/>
+
+    <div style='display:flex; margin-left: 8%; margin-right: 2%;'>
+
+      <div id="Photos" style="width: 63%;">Photos</div>
+      <div id="Item" style="width: 37%;">Items</div>
     </div>
-    <div id="Looks">Looks</div>
+    <br/>
+    <br/>
+    <img style="object-fit:contain; height:10%; width:60%;" src="https://fec-fourloop-looks.s3-us-west-1.amazonaws.com/Screen+Shot+2020-05-18+at+6.26.18+PM.png"/>
 
-    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
-    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
-    <script src="http://localhost:1234/main.js"></script>
-    <script src="http://localhost:8080/bundle.js"></script>
-    <script src="http://localhost:3000/bundle.js"></script>
-  </body>
+    <div id="Looks">Looks</div>
+    <img style="position: absolute; left: 0; width: 100%;" src="https://fec-fourloop-looks.s3-us-west-1.amazonaws.com/Screen+Shot+2020-05-18+at+6.23.00+PM.png"/>
+
+  <!-- </div> -->
+<!--
+  <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script> -->
+  <script src="http://54.219.237.16:1235/main.js"></script>
+  <script src="http://13.57.207.50:3333/bundle.js"></script>
+  <script src="http://3.101.47.20:3000/bundle.js"></script>
+</body>
+
 </html>
